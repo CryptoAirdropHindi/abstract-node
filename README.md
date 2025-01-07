@@ -36,15 +36,15 @@ sudo systemctl start docker
 ```
 sudo systemctl enable docker
 ```
-1. Clone the github repository
+# 1. Clone the github repository
 ```
 git clone https://github.com/Abstract-Foundation/abstract-node
 ```
-2. Move to abstract directory
+# 2. Move to abstract directory
 ```
 cd abstract-node/external-node
 ```
-3. Start the node
+# 3. Start the node
 ```
 docker compose --file testnet-external-node.yml up -d
 ```
@@ -52,12 +52,12 @@ docker compose --file testnet-external-node.yml up -d
 ```
 docker logs -f --tail=0 <container name>
 ```
-- testnet-node-external-node-1
-- testnet-node-postgres-1
-- testnet-node-prometheus-1
-- testnet-node-grafana-1
+- `testnet-node-external-node-1`
+- `testnet-node-postgres-1`
+- `testnet-node-prometheus-1`
+- `testnet-node-grafana-1`
 
-5. Save your private key
+# 5. Save your private key
 ```
 cd configs
 cat testnet_consensus_secrets.yaml
